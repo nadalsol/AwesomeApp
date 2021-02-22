@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeApp.MainPage">
+    <ScrollView>
+        <!--[Event Details Page](https://app.zeplin.io/project/602cf02200f2e61f121ba3f8/screen/602cf1845a8d9912e6bddd20)-->
+        <StackLayout BackgroundColor="Beige" Padding="32">
+            <Grid ColumnSpacing="16" RowSpacing="0" Padding="0,16" BackgroundColor="Pink">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                    <!--<Image Source="https://via.placeholder.com/64x64" />-->
+                    <BoxView WidthRequest="64" HeightRequest="64" BackgroundColor="Gray" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" VerticalOptions="Center" BackgroundColor="Aqua">
+                    <FlexLayout>
+                        <Label Text="Schneider Electric" />
+                        <Label Text="Event ID 12345678" />
+                        <Frame Padding="4,2" BackgroundColor="Gray" CornerRadius="2" HasShadow="False">
+                            <Label Text="Event ID 12345678" />
+                        </Frame>
+                        <Label Text="1 h 18 min" />
+                    </FlexLayout>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="India-IDF5"/>
+                                    <Span Text=" | "/>
+                                    <Span Text="3 Plant Areas"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </Grid>
+
+            <Grid ColumnSpacing="8" RowSpacing="0" Padding="0,16"  BackgroundColor="Aqua">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                    <BoxView WidthRequest="20" HeightRequest="20" BackgroundColor="Gray" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" VerticalOptions="Center">
+                    <FlexLayout>
+                        <Label Text="Jan 19, 2021" />
+                        <Label Text=" – " />
+                        <Label Text="Jan 21, 2021" />
+                        <Frame Padding="4,2" BackgroundColor="Gray" CornerRadius="2" HasShadow="False">
+                            <Label Text="7 Days Overdue" />
+                        </Frame>
+                    </FlexLayout>
+                </StackLayout>
+            </Grid>
+
+            <Grid ColumnSpacing="16" RowSpacing="0" Padding="0,16" BackgroundColor="Pink">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="12 Activities" />
+                </StackLayout>
+
+                <FlexLayout Grid.Column="1" VerticalOptions="Center" BackgroundColor="Aqua">
+                    <BoxView WidthRequest="20" HeightRequest="20" BackgroundColor="Gray" />
+                    <Label Padding="2,0,0,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="1"/>
+                                    <Span Text=" | "/>
+                                    <Span Text="7 Assets"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </FlexLayout>
+            </Grid>
+
+            <Grid ColumnSpacing="16" RowSpacing="0" Padding="0,16" BackgroundColor="Aqua">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="Activities" />
+                    <Label Text="5 Calibration tests" />
+                    <Label Text="7 Flexible tests" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" VerticalOptions="Center">
+                    <Label Text="Assets" />
+                    <FlexLayout VerticalOptions="Center">
+                        <BoxView WidthRequest="16" HeightRequest="16" BackgroundColor="Gray" />
+                        <Label Padding="2,0,0,0">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="1"/>
+                                        <Span Text=" | "/>
+                                        <Span Text="5 Instruments"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </FlexLayout>
+                    <Label Text="2 Equipment" />
+                </StackLayout>
+            </Grid>
+
+            <Grid ColumnSpacing="16" RowSpacing="0" Padding="0,16" BackgroundColor="Aqua">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="Event Assignee" />
+                    <Label Text="Brian Bennet" />
+                    <Label Text="[Organization name]" />
+                </StackLayout>
+            </Grid>
+
+            <Grid ColumnSpacing="16" RowSpacing="0" Padding="0,16" BackgroundColor="Pink">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0" VerticalOptions="Center">
+                    <Label Text="Site Address" />
+                    <FlexLayout VerticalOptions="Center">
+                        <!--<maps:Map WidthRequest="96" HeightRequest="96" ItemsSource="{Binding Locations}" />-->
+                        <BoxView WidthRequest="96" HeightRequest="96" BackgroundColor="Gray" />
+                        <StackLayout Padding="16,0,0,0">
+                            <Label Text="Address Line 1" />
+                            <Label Text="Address Line 2" />
+                            <Label Text="Post code, City" />
+                            <Label Text="County, Country" />
+                        </StackLayout>
+                    </FlexLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" VerticalOptions="Center">
+                    <Label Text="Event Description" />
+                    <Label Text="Please note parking at the site is only permitted between 1PM and 5PM. It is important calibrations are performed during the operation, in case the asset is not used in the afternoon, please visit the site in the morning." />
+                </StackLayout>
+            </Grid>
+
+            <Frame Padding="16" BackgroundColor="Aqua" CornerRadius="4" HasShadow="False">
+                <StackLayout>
+                    <Label Text="Performing Activities" />
+                    <Label Text="To perform a calibration test select a checkbox of the channel you would like to calibrate. You can select multiple channels at once. To mark a channel or selection as unavailable for calibration, to perform an AdHoc test or create a new channel open the more menu for options." />
+                    <Label Text="To perform a flexible test select a chechbox of the test you would like to perform the test on. You can select multiple tests at once." />
+                    <Label Text="To perform an AdHoc test on an asset open more menu next to the asset name and select AdHoc test from the options." />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <FlexLayout Grid.Column="0" HeightRequest="20" VerticalOptions="Center">
+                            <CheckBox IsChecked="True" />
+                            <Label Text="Don’t show this message again" Padding="8,0,0,0" />
+                        </FlexLayout>
+                        <Button Grid.Column="1" VerticalOptions="Center" Text="OK, I got it" />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+            <FlexLayout>
+                <Picker Title="Activities by Test Type" TitleColor="Black" Margin="16,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                        <x:String>Lorem</x:String>
+                        <x:String>Ipsum</x:String>
+                        <x:String>Dolor</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker Title="Status" TitleColor="Black" Margin="16,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                        <x:String>Lorem</x:String>
+                        <x:String>Ipsum</x:String>
+                        <x:String>Dolor</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker Title="Data Range" TitleColor="Black" Margin="16,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                        <x:String>Lorem</x:String>
+                        <x:String>Ipsum</x:String>
+                        <x:String>Dolor</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker Title="More" TitleColor="Black" Margin="16,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                        <x:String>Lorem</x:String>
+                        <x:String>Ipsum</x:String>
+                        <x:String>Dolor</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </FlexLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
